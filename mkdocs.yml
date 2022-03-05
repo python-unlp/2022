@@ -1,0 +1,53 @@
+site_name: Python 2022
+theme:
+  name: 'material'
+  logo: images/logo.png
+  favicon: images/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Inicio: index.md
+  - Teorías: 01_teorias.md
+  - Práctica: 02_practicas.md
+  - Explicaciones: 03_explicaciones.md
+  - Herramientas: 04_herramientas.md
+  - Guías:
+    - Comandos: guias/01_commands.md
+    - Ssh: guias/02_ssh.md
+    - Ssh Gitlab: guias/03_ssh_gitlab.md
+    - Instalar Git: guias/04_instalar_git.md
+    - Instalar Python: guias/05_instalar_python.md
+    - Manejo de Paquetes: guias/06_manejo_de_paquetes.md
+    - Entornos Virtuales: guias/07_entornos_virtuales.md
+    - Merge Requests en Gitlab: guias/08_merge_request.md
+    - Guías de Estilo: guias/09_guias_de_estilo.md
+markdown_extensions:
+  - md_in_html
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+  - mkdocs-video
