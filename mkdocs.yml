@@ -25,10 +25,10 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Teorías: 01_teorias.md
-  - Práctica: 02_practicas.md
-  - Explicaciones: 03_explicaciones.md
-  - Herramientas: 04_herramientas.md
+  # - Teorías: 01_teorias.md
+  # - Práctica: 02_practicas.md
+  # - Explicaciones: 03_explicaciones.md
+  # - Herramientas: 04_herramientas.md
   - Guías:
     - Comandos: guias/01_commands.md
     - Ssh: guias/02_ssh.md
