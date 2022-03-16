@@ -9,7 +9,11 @@ En la explicación práctica hablamos sobre los conceptos de `git`.
 
 ```bash
 sudo apt update
+```
+```bash
 sudo apt upgrade
+```
+```bash
 sudo apt install git
 ```
 
@@ -17,6 +21,8 @@ sudo apt install git
 
 ```bash
 sudo yum upgrade
+```
+```bash
 sudo yum install git
 ```
 ### En Arch-based
@@ -55,8 +61,8 @@ código es necesario contar con información de usuario. Por esto es necesario q
 configuremos lo siguiente:
 
 ```bash
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 ```
 
 Para ver la configuración:

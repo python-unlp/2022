@@ -25,20 +25,21 @@ theme:
 
 nav:
   - Inicio: index.md
-  # - Teorías: 01_teorias.md
+  - Teorías: 01_teorias.md
   # - Práctica: 02_practicas.md
-  # - Explicaciones: 03_explicaciones.md
+  - Explicaciones: 03_explicaciones.md
   # - Herramientas: 04_herramientas.md
   - Guías:
     - Comandos: guias/01_commands.md
     - Ssh: guias/02_ssh.md
     - Ssh Gitlab: guias/03_ssh_gitlab.md
     - Instalar Git: guias/04_instalar_git.md
-    - Instalar Python: guias/05_instalar_python.md
-    - Manejo de Paquetes: guias/06_manejo_de_paquetes.md
+    - Git básico: guias/05_git_basico.md
+    - Instalar Python: guias/06_instalar_python.md
     - Entornos Virtuales: guias/07_entornos_virtuales.md
-    - Merge Requests en Gitlab: guias/08_merge_request.md
+    - Manejo de Paquetes: guias/08_manejo_de_paquetes.md
     - Guías de Estilo: guias/09_guias_de_estilo.md
+    - Merge Requests en Gitlab: guias/10_merge_request.md
 markdown_extensions:
   - md_in_html
   - toc:
