@@ -1,5 +1,2 @@
 # Prácticas
-
-## Trabajo Integrador
-
-## Actividades
+## [:material-file: Práctica 1](practica01.pdf)

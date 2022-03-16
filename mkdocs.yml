@@ -26,7 +26,7 @@ theme:
 nav:
   - Inicio: index.md
   - Teorías: 01_teorias.md
-  # - Práctica: 02_practicas.md
+  - Práctica: 02_practicas.md
   - Explicaciones: 03_explicaciones.md
   # - Herramientas: 04_herramientas.md
   - Guías:
@@ -51,4 +51,4 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
-  - mkdocs-video
+  - mkdocs-video 
