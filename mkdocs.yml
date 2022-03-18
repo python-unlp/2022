@@ -36,10 +36,10 @@ nav:
     - Instalar Git: guias/04_instalar_git.md
     - Git básico: guias/05_git_basico.md
     - Instalar Python: guias/06_instalar_python.md
+    - Entornos Virtuales: guias/07_entornos_virtuales.md
     - Manejo de Paquetes: guias/08_manejo_de_paquetes.md
-    - Entornos Virtuales: guias/08_entornos_virtuales.md
-    - Merge Requests en Gitlab: guias/09_merge_request.md
-    - Guías de Estilo: guias/10_guias_de_estilo.md
+    - Guías de Estilo: guias/09_guias_de_estilo.md
+    - Merge Requests en Gitlab: guias/10_merge_request.md
     - Jupyter Notebook: guias/11_jupyter_notebook.md
 markdown_extensions:
   - md_in_html
