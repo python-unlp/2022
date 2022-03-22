@@ -5,6 +5,7 @@
 Jupyter Notebook es un entorno de trabajo interactivo que permite desarrollar código en Python. Es utilizado ampliamente para análisis numéricos, estadísticas y machine learning, entre otros campos de la informática.
 
 Algunas de las principales funciones y beneficios que provee:
+
 * Permite editar el código desde el navegador, resaltando la sintaxis, indentación y también provee funciones de autocompletado.
 * Permite ejecutar código desde el navegador, mostrando los resultados de esta ejecución.
 * Provee facilidades para la documentación y visualización del código.
@@ -18,6 +19,7 @@ Esta guía está basada en la siguiente documentación: https://jupyter-notebook
 ## Prerequisitos
 
 Esta guía asume que las siguientes herramientas ya fueron instaladas correctamente en el sistema:
+
 * Python 3.10.2
 * Pip3
     * Usar alguna de las últimas versiones
