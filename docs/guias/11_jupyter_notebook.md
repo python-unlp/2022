@@ -5,22 +5,22 @@
 Jupyter Notebook es un entorno de trabajo interactivo que permite desarrollar código en Python. Es utilizado ampliamente para análisis numéricos, estadísticas y machine learning, entre otros campos de la informática.
 
 Algunas de las principales funciones y beneficios que provee:
-- Permite editar el código desde el navegador, resaltando la sintaxis, indentación y también provee funciones de autocompletado.
-- Permite ejecutar código desde el navegador, mostrando los resultados de esta ejecución.
-- Provee facilidades para la documentación y visualización del código.
-- No solo permite escribir código Python sino también permite visualizar otro tipo de extensiones como Markdown y HTML.
-- Permite iniciar una sesión de una terminal de bash para ejecutar comandos desde el mismo navegador.
-- Se puede agregar cualquier archivo **.py** o **.ipynb** simplemente arrastrandolos hasta la interfaz de la herramienta.
-    - Los archivos que genera son de extensión "ipynb", con lo que podemos compartirlos con nuestros compañeros.
+* Permite editar el código desde el navegador, resaltando la sintaxis, indentación y también provee funciones de autocompletado.
+* Permite ejecutar código desde el navegador, mostrando los resultados de esta ejecución.
+* Provee facilidades para la documentación y visualización del código.
+* No solo permite escribir código Python sino también permite visualizar otro tipo de extensiones como Markdown y HTML.
+* Permite iniciar una sesión de una terminal de bash para ejecutar comandos desde el mismo navegador.
+* Se puede agregar cualquier archivo **.py** o **.ipynb** simplemente arrastrandolos hasta la interfaz de la herramienta.
+    * Los archivos que genera son de extensión "ipynb", con lo que podemos compartirlos con nuestros compañeros.
 
 Esta guía está basada en la siguiente documentación: https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#creating-a-new-notebook-document
 
 ## Prerequisitos
 
 Esta guía asume que las siguientes herramientas ya fueron instaladas correctamente en el sistema:
-- Python 3.10.2
-- Pip3
-    - Usar alguna de las últimas versiones
+* Python 3.10.2
+* Pip3
+    * Usar alguna de las últimas versiones
 
 ## Instalación
 
