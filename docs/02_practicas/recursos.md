@@ -6,4 +6,4 @@
 
 ## Práctica 2
 
-<!-- * **Formatos:** [:material-file-pdf-box:](practica02.pdf) [:material-language-python:](practica02.ipynb) -->
+* **Formatos:** [:material-file-pdf-box:](practica02.pdf) [:material-language-python:](practica02.ipynb) 
