@@ -13,9 +13,18 @@
 ## Clase 2
 
 * **Temas:** Listas, tuplas, diccionarios.
-* **Formatos:** [:material-file-pdf-box:](clase_02.pdf)[ :material-language-python:](clase_02.ipynb)
+* **Formatos:** [:material-file-pdf-box:](clase_02.pdf) [:material-language-python:](clase_02.ipynb)
 
 ## Clase 2-1
 
 * **Temas:** Funciones en Python. Conjuntos.
-* **Formatos:** [:material-file-pdf-box:](clase_02_1.pdf) [ :material-language-python:](clase_02_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/rpsTYr7nNTl1VdA))
+* **Formatos:** [:material-file-pdf-box:](clase_02_1.pdf) [:material-language-python:](clase_02_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/rpsTYr7nNTl1VdA))
+
+## Clase 3
+
+* **Temas:** Argumentos variables - Expresiones Lambda.
+* **Formatos:** [:material-file-pdf-box:](clase_03.pdf) [:material-language-python:](clase_03.ipynb)
+
+## Clase 3-1
+* **Temas:** Módulos en Python.
+* **Formatos:** [:material-file-pdf-box:](clase_03_1.pdf) [:material-language-python:](clase_03_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/zvsPSqBsXQ6dLmj)
