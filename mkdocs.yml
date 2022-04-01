@@ -25,10 +25,16 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Teorías: 01_teorias.md
-  - Práctica: 02_practicas.md
+  - Teorías:
+    - Recursos: 01_teorias/recursos.md
+    - Clase 1: 01_teorias/clase_01.ipynb
+    - Clase 1-1: 01_teorias/clase_01_1.ipynb
+    - Clase 2: 01_teorias/clase_02.ipynb
+    - Clase 2-1: 01_teorias/clase_02_1.ipynb
+  - Práctica:
+    - Recursos: 02_practicas/recursos.md
+    - Práctica 1: 02_practicas/practica01.ipynb
   - Explicaciones: 03_explicaciones.md
-  # - Herramientas: 04_herramientas.md
   - Guías:
     - Comandos: guias/01_commands.md
     - Ssh: guias/02_ssh.md
@@ -41,7 +47,9 @@ nav:
     - Guías de Estilo: guias/09_guias_de_estilo.md
     - Merge Requests en Gitlab: guias/10_merge_request.md
     - Jupyter Notebook: guias/11_jupyter_notebook.md
-markdown_extensions:
+
+markdown_extensions: 
+  - attr_list
   - md_in_html
   - toc:
       permalink: true
@@ -53,3 +61,6 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
   - mkdocs-video
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      execute: False
