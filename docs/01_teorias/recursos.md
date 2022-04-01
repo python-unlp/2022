@@ -27,4 +27,4 @@
 
 ## Clase 3-1
 * **Temas:** Módulos en Python.
-* **Formatos:** [:material-file-pdf-box:](clase_03_1.pdf) [:material-language-python:](clase_03_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/zvsPSqBsXQ6dLmj)
+* **Formatos:** [:material-file-pdf-box:](clase_03_1.pdf) [:material-language-python:](clase_03_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/zvsPSqBsXQ6dLmj))
