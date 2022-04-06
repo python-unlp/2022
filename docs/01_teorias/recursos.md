@@ -28,3 +28,11 @@
 ## Clase 3-1
 * **Temas:** Módulos en Python.
 * **Formatos:** [:material-file-pdf-box:](clase_03_1.pdf) [:material-language-python:](clase_03_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/zvsPSqBsXQ6dLmj))
+
+## Clase 4
+* **Temas:** Manejo de archivos.
+* **Formatos:** [:material-file-pdf-box:](clase04.pdf) [:material-language-python:](clase04.ipynb)
+
+## Clase 4-1
+* **Temas:** Manejo de archivos (cont.).
+* **Formatos:** [:material-file-pdf-box:](clase04_1.pdf) [:material-language-python:](clase04_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/nmPac4V2ZuuJRJS))
