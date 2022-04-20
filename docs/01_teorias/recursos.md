@@ -36,3 +36,11 @@
 ## Clase 4-1
 * **Temas:** Manejo de archivos (cont.).
 * **Formatos:** [:material-file-pdf-box:](clase04_1.pdf) [:material-language-python:](clase04_1.ipynb) ([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/nmPac4V2ZuuJRJS))
+
+## Clase 5
+* **Temas:** Repaso sobre manejo de archivos.
+* **Formatos:** [:material-file-pdf-box:](clase05.pdf) [:material-language-python:](clase05.ipynb) 
+
+## Clase 6
+* **Temas:** GUI - Introducción al manejo de excepciones.
+* **Formatos:** [:material-file-pdf-box:](clase06.pdf) [:material-language-python:](clase06.ipynb) 
