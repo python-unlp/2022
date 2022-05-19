@@ -51,6 +51,7 @@ nav:
     - Guías de Estilo: guias/09_guias_de_estilo.md
     - Merge Requests en Gitlab: guias/10_merge_request.md
     - Jupyter Notebook: guias/11_jupyter_notebook.md
+    - Buenas Prácticas: guias/12_buenas_practicas.md
 
 markdown_extensions: 
   - attr_list
@@ -63,6 +64,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 plugins:
   - mkdocs-video
   - mkdocs-jupyter:
