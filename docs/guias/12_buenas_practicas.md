@@ -133,6 +133,26 @@ falsy
 None
 ```
 
+## NO Globals
+
+```python
+c = 0
+
+def add():
+    global c
+    c = c + 2
+    print("Inside add():", c)
+
+add()
+print("In main:", c)
+```
+
+```
+# output
+Inside add(): 2
+In main: 2
+```
+
 ## Unpacking
 
 ```python
