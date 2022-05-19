@@ -10,6 +10,16 @@ virtualenv -p python venv
 source venv/bin/activate
 ```
 
+## IPython
+
+```bash
+pip install ipython
+```
+
+```bash
+ipython
+```
+
 ## Zen
 
 ```python
@@ -39,16 +49,6 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-```
-
-## IPython
-
-```bash
-pip install ipython
-```
-
-```bash
-ipython
 ```
 
 ## Return multiple values
@@ -220,12 +220,12 @@ print(merged)
 a[start:stop:step]
 ```
 
-`start`, `stop` and `step` are optional.
-If you don’t fill them in, they will default to:
+`start`, `stop` y `step` son opcionales.
+Si no los completas tendrán los siguientes valores por defecto:
 
-- 0 for `start`
-- the end of the string for `end`
-- 1 for `step`
+- 0 para `start`
+- el final de la lista para `end`
+- 1 para `step`
 
 ```python
 # We can easily create a new list from
@@ -301,7 +301,28 @@ Item: #08 at: 3
 Item: #10 at: 4
 ```
 
+## Zip
+
+```python
+numbers = [1, 2, 3]
+words = ['one', 'two', 'three']
+
+numbers_and_words = zip(numbers, words)
+
+print(list(numbers_and_words))
+
+# zip(numbers, words, strict=True) Probar!
+```
+
+```
+# output
+[(1, 'one'), (2, 'two'), (3, 'three')]
+```
+
 ## Map
+
+Map se utiliza generalmente cuando quiero aplicarle alguna transformación
+a cada elemento de la lista, pero no alterar la cantidad de elementos.
 
 ```python
 map(function, iterable)
@@ -345,6 +366,9 @@ print(list_of_ints)
 
 ## Filter
 
+El filter se utiliza cuando quiero generalmente modificar la cantidad de
+elementos de un iterable, pero no transformar cada elemento.
+
 ```python
 filter(function, iterable)
 ```
@@ -372,6 +396,13 @@ print(list(filtered))
 ```
 
 ## Reduce
+
+Se puede utilizar en distintos casos:
+
+- Quiero sumarizar valores de un iterable
+- Quiero generar un iterable bastante distinto en forma partiendo de otro
+
+**Se recomienda no utilizarlo cuando se podría haber usado un filter o un map**
 
 ```python
 reduce(function, iterable, init)
@@ -422,6 +453,9 @@ print(result)
 ```
 
 ## List comprehension
+
+Esta expresión nos permite hacer prácticamente lo mismo que un filter y un map
+al mismo tiempo.
 
 ```python
 [expression for item in list if condition]
@@ -474,6 +508,58 @@ print(filtered)
 ```
 # output
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+```
+
+## Generators
+
+Todas las funciones que vimos anteriormente son eficientes. Lo son porque
+lo que terminan devolviendo internamente son generadores. Los generadores nos
+permiten devolver parcialmente elementos en una iteración si tener que
+procesar toda la estructura.
+
+### Iterar hasta numeros muy grandes
+
+```python
+r = range(0, 100_000_000)
+%time l = list(r)
+```
+
+```python
+def g_range(start, end):
+    n = start
+    while True:
+        yield n
+        n += 1
+        if n == end:
+            break
+
+gr = g_range(0, 100_000_000)
+```
+
+### Iterar infitinamente
+
+```python
+def all_even():
+    n = 0
+    while True:
+        yield n
+        n += 2
+```
+
+### Pipeline de generadores
+
+```python
+def fibonacci_numbers(nums):
+    x, y = 0, 1
+    for _ in range(nums):
+        x, y = y, x+y
+        yield x
+
+def square(nums):
+    for num in nums:
+        yield num**2
+
+print(sum(square(fibonacci_numbers(10))))
 ```
 
 ## Data classes
