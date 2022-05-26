@@ -606,6 +606,44 @@ Rank: Q
 Card: Card(rank='Q', suit='hearts')
 ```
 
+### Ejemplo para usar en el juego
+
+```python
+import PySimpleGUI as sg
+from dataclasses import dataclass, field
+
+
+@dataclass
+class Event():
+    name: str
+    values: dict = field(default_factory=dict)
+
+
+sg.theme('DarkAmber')    # Keep things interesting for your users
+
+layout = [[sg.Text('Persistent window')],
+          [sg.Input(key="-AGE-")],
+          [sg.Input(key="-TEXT-")],
+          [sg.Button('Read'), sg.Exit()]]
+
+window = sg.Window('Window that stays open', layout)
+
+while True:                             # The Event Loop
+    event = Event(*window.read())
+    print(event)
+
+    match event:
+        case Event(name='Read', values={"-AGE-": str(value)}) if int(value) < 18:
+            print("ES MENOR de edad!")
+        case Event(name='Read', values={"-NAME-": str(value)}):
+            print(f"READ: {value}")
+        case Event(name='Exit'):
+            print("EXIT")
+            break
+
+window.close()
+```
+
 ## Style guide
 
 ```python
