@@ -46,7 +46,7 @@
 
 ## Clase 7-1
 * **Temas:** Introducción a la Programación Orientada a Objetos.
-* **Formatos:** [:material-file-pdf-box:](clase07_1.pdf) [:material-language-python:](clase07_1.ipynb)([:material-video: v](https://archivos.linti.unlp.edu.ar/index.php/s/zFzLXmXD6hxOTYt))
+* **Formatos:** [:material-file-pdf-box:](clase07_1.pdf) [:material-language-python:](clase07_1.ipynb)([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/zFzLXmXD6hxOTYt))
 
 ## Clase 8
 * **Temas:**Programación Orientada a Objetos.
@@ -54,7 +54,7 @@
 
 ## Clase 8-1
 * **Temas:**Iteradores y nuevas excepciones.
-* **Formatos:** [:material-file-pdf-box:](clase08_1.pdf) [:material-language-python:](clase08_1.ipynb)([:material-video: v](https://archivos.linti.unlp.edu.ar/index.php/s/glN3LQ7ZEcVAMSt))
+* **Formatos:** [:material-file-pdf-box:](clase08_1.pdf) [:material-language-python:](clase08_1.ipynb)([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/glN3LQ7ZEcVAMSt))
 
 ## Clase 9
 * **Temas:**Introducción al análisis de datos con pandas
@@ -62,7 +62,17 @@
 
 ## Clase 9-1
 * **Temas:**Una introducción a GeoPandas
-* **Formatos:** [:material-file-pdf-box:](clase09_1.pdf) [:material-language-python:](clase09_1.ipynb)([:material-video: v](https://archivos.linti.unlp.edu.ar/index.php/s/3vB8KSiX82jzh7z))
+* **Formatos:** [:material-file-pdf-box:](clase09_1.pdf) [:material-language-python:](clase09_1.ipynb)([:material-video:](https://archivos.linti.unlp.edu.ar/index.php/s/3vB8KSiX82jzh7z))
+
+## Clase 10
+* **Temas:**Un poco más de pandas y GeoPandas
+* **Formatos:** [:material-file-pdf-box:](clase10.pdf) [:material-language-python:](clase10.ipynb)
+
+## Clase 10-1
+* **Temas:**Control de tipos
+* **Formatos:** [:material-file-pdf-box:](clase10_1.pdf) [:material-language-python:](clase10_1.ipynb)([:material-video: video 2021](https://archivos.linti.unlp.edu.ar/index.php/s/aAtmXq9IZEs0Ne8))
+
+
 
 
 
