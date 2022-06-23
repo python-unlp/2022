@@ -1,0 +1,975 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Jupyter Notebook - Python 2022</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#jupyter-notebook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Python 2022" class="md-header__button md-logo" aria-label="Python 2022" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python 2022
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Jupyter Notebook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../01_teorias/recursos/" class="md-tabs__link">
+        Teorías
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../02_practicas/recursos/" class="md-tabs__link">
+        Práctica
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../03_explicaciones/" class="md-tabs__link">
+      Explicaciones
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01_commands/" class="md-tabs__link md-tabs__link--active">
+        Guías
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python 2022" class="md-nav__button md-logo" aria-label="Python 2022" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Python 2022
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Teorías
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teorías" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Teorías
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/recursos/" class="md-nav__link">
+        Recursos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase_01/" class="md-nav__link">
+        Clase 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase_01_1/" class="md-nav__link">
+        Clase 1-1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase_02/" class="md-nav__link">
+        Clase 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase_02_1/" class="md-nav__link">
+        Clase 2-1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase03/" class="md-nav__link">
+        Clase 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase03_1/" class="md-nav__link">
+        Clase 3-1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase04/" class="md-nav__link">
+        Clase 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_teorias/clase04_1/" class="md-nav__link">
+        Clase 4-1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Práctica
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Práctica" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Práctica
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_practicas/recursos/" class="md-nav__link">
+        Recursos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_practicas/practica01/" class="md-nav__link">
+        Práctica 1
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_explicaciones/" class="md-nav__link">
+        Explicaciones
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Guías
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guías" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guías
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_commands/" class="md-nav__link">
+        Comandos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_ssh/" class="md-nav__link">
+        Ssh
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_ssh_gitlab/" class="md-nav__link">
+        Ssh Gitlab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_instalar_git/" class="md-nav__link">
+        Instalar Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_git_basico/" class="md-nav__link">
+        Git básico
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_instalar_python/" class="md-nav__link">
+        Instalar Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_entornos_virtuales/" class="md-nav__link">
+        Entornos Virtuales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_manejo_de_paquetes/" class="md-nav__link">
+        Manejo de Paquetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_guias_de_estilo/" class="md-nav__link">
+        Guías de Estilo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_merge_request/" class="md-nav__link">
+        Merge Requests en Gitlab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Jupyter Notebook
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Jupyter Notebook
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisitos" class="md-nav__link">
+    Prerequisitos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-el-servidor" class="md-nav__link">
+    Iniciando el servidor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos" class="md-nav__link">
+    Primeros pasos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_buenas_practicas/" class="md-nav__link">
+        Buenas Prácticas
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisitos" class="md-nav__link">
+    Prerequisitos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-el-servidor" class="md-nav__link">
+    Iniciando el servidor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos" class="md-nav__link">
+    Primeros pasos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="jupyter-notebook">Jupyter notebook<a class="headerlink" href="#jupyter-notebook" title="Permanent link">&para;</a></h1>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h2>
+<p>Jupyter Notebook es un entorno de trabajo interactivo que permite desarrollar código en Python. Es utilizado ampliamente para análisis numéricos, estadísticas y machine learning, entre otros campos de la informática.</p>
+<p>Algunas de las principales funciones y beneficios que provee:</p>
+<ul>
+<li>Permite editar el código desde el navegador, resaltando la sintaxis, indentación y también provee funciones de autocompletado.</li>
+<li>Permite ejecutar código desde el navegador, mostrando los resultados de esta ejecución.</li>
+<li>Provee facilidades para la documentación y visualización del código.</li>
+<li>No solo permite escribir código Python sino también permite visualizar otro tipo de extensiones como Markdown y HTML.</li>
+<li>Permite iniciar una sesión de una terminal de bash para ejecutar comandos desde el mismo navegador.</li>
+<li>Se puede agregar cualquier archivo <strong>.py</strong> o <strong>.ipynb</strong> simplemente arrastrandolos hasta la interfaz de la herramienta.<ul>
+<li>Los archivos que genera son de extensión "ipynb", con lo que podemos compartirlos con nuestros compañeros.</li>
+</ul>
+</li>
+</ul>
+<p>Esta guía está basada en la siguiente documentación: https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#creating-a-new-notebook-document</p>
+<h2 id="prerequisitos">Prerequisitos<a class="headerlink" href="#prerequisitos" title="Permanent link">&para;</a></h2>
+<p>Esta guía asume que las siguientes herramientas ya fueron instaladas correctamente en el sistema:</p>
+<ul>
+<li>Python 3.10.2</li>
+<li>Pip3<ul>
+<li>Usar alguna de las últimas versiones</li>
+</ul>
+</li>
+</ul>
+<h2 id="instalacion">Instalación<a class="headerlink" href="#instalacion" title="Permanent link">&para;</a></h2>
+<p>Para instalar Jupyter Notebook utilizando pip, se debe ejecutar el comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip3 install jupyter
+</code></pre></div>
+<h2 id="iniciando-el-servidor">Iniciando el servidor<a class="headerlink" href="#iniciando-el-servidor" title="Permanent link">&para;</a></h2>
+<p>Una vez instalado, para poder comenzar a utilizarlo es necesario iniciar el servidor de Jupyter Notebook.
+Este servidor se ejecutará en "localhost", es decir que nuestra computadora creará un servidor local ejecutando la herramienta.
+Para esto se debe ejecutar el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>jupyter notebook
+</code></pre></div>
+<p>Una vez iniciado el servidor, nuestra computadora abrirá automáticamente el navegador web visualizando la interfaz gráfica de la herramienta.
+<strong>En caso de que esto no suceda automáticamente, abrir un navegador web e ingresar la siguiente url: http://localhost:8888/</strong>
+Por defecto el servidor se ejecuta utilizando el puerto <strong>8888</strong> de nuestra computadora.</p>
+<p>Para terminar la sesión del servidor basta simplemente con ir nuevamente a la terminal donde se ejecuto el comando anterior y presionar las teclas <strong>CTRL + C</strong>. La herramienta le pedirá una confimación y luego apagará el servidor.
+<strong>Importante:</strong> Guardar todos los cambios antes de apagar el servidor. De esta forma, al iniciarlo nuevamente, todos los archivos de la sesión anterior seguirán estando disponibles.</p>
+<h2 id="primeros-pasos">Primeros pasos<a class="headerlink" href="#primeros-pasos" title="Permanent link">&para;</a></h2>
+<p>Para comenzar a utilizar Jupyter Notebook, primero debemos crear un archivo de código Python o "notebook".
+Para esto simplemente debemos hacer click en el botón "New 🔽" y seleccionar el intérprete de Python.
+<img alt="image" src="https://jupyter-notebook.readthedocs.io/en/stable/_images/new-notebook.gif" /></p>
+<p>Una vez creado nuestro archivo notebook, solo basta con escribir código Python en él y darle click al botón "Play" para ejecutarlo y ver su resultado.
+<img width="1179" alt="image" src="https://user-images.githubusercontent.com/26656167/158714034-4bb7fb48-06c4-4d1a-84ed-040d9ef3daf9.png"></p>
+<p>La herramienta es muy flexible y permite no solo el uso de librerías externas, sino tambien referenciar a otros archivos dentro del proyecto.
+Algunos ejemplos pueden encontrarse en el siguiente repositorio de Github: https://github.com/ipython/ipython/blob/master/examples/IPython%20Kernel/Rich%20Output.ipynb</p>
+<p>En el caso de utilizar alguna librería de Python, debemos primero instalarla en nuestro sistema.
+Por ejemplo en el caso de <a href="https://matplotlib.org/stable/users/getting_started/index.html#installation-quick-start"><code>matplotlib</code></a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip3 install matplotlib
+</code></pre></div>
+Y luego podemos ejecutar código utilizando dicha librería en Jupyter Notebook.
+<img width="1142" alt="image" src="https://user-images.githubusercontent.com/26656167/158714983-ee9c0e17-7e53-4cc3-a4a4-cd4de527a348.png"></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../10_merge_request/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Merge Requests en Gitlab" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Merge Requests en Gitlab
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../12_buenas_practicas/" class="md-footer__link md-footer__link--next" aria-label="Next: Buenas Prácticas" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Buenas Prácticas
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticy"], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+    
+  </body>
+</html>
